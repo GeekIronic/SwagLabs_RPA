@@ -8,16 +8,6 @@ msnBlock = 'xpath://*[@id="login_button_container"]/div/form/div[3]/h3'
 
 
 
-
-
-
-
-
-
-
-
-
-
 #Objetos de Invetario
     #Botones de compra
 btn_SauceLabsOnesie = 'xpath://*[@id="add-to-cart-sauce-labs-onesie"]'
@@ -46,16 +36,13 @@ Txt_SauceLabsBackpack = 'xpath://*[@id="item_4_title_link"]'
 Txt_SauceLabsFleeceJacket = 'xpath://*[@id="item_5_title_link"]'
 
 
-
-
-
-
 # Formulario de envio
     # Verificar ya qye genera fallo
-For_nombre='xpath://*[@id="first-name"]',
-For_Apellido='xpath://*[@id="last-name"]',
+loc_Nombre='//*[@id="first-name"]',
+loc_Apellido='//*[@id="last-name"]',
 For_CodePostal = 'xpath://*[@id="postal-code"]',
-VarNombre='Michael',
-VarApellido='Jodan',
-VarCodePostal='111116',
 btn_EnviarForm ='xpath://*[@id="continue"]'
+NombreU='Alex',
+ApellidoU='Roses',
+PostalU=11123
+
