@@ -38,11 +38,14 @@ Txt_SauceLabsFleeceJacket = 'xpath://*[@id="item_5_title_link"]'
 
 # Formulario de envio
     # Verificar ya qye genera fallo
-loc_Nombre='//*[@id="first-name"]',
-loc_Apellido='//*[@id="last-name"]',
-For_CodePostal = '//*[@id="postal-code"]',
+#loc_Nombre='//*[@id="first-name"]',
+#loc_Apellido='//*[@id="last-name"]',
+#For_CodePostal = '//*[@id="postal-code"]',
 btn_EnviarForm ='xpath://*[@id="continue"]'
 NombreU='Alex',
 ApellidoU='Roses',
 PostalU=11123
 
+# Confirmar paog
+btn_Continue = 'xpath://*[@id="finish"]'
+btn_Cancel = 'xpath://*[@id="cancel"]'

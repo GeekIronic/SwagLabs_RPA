@@ -5,6 +5,7 @@ Resource    ../Resources/Login.robot
 Resource    ../Resources/Buys.robot
 Resource    ../Resources/ShoppingCart.robot
 Resource    ../Resources/Formulation.robot
+Resource    ../Resources/ConfirmPayment.robot
 
 
 *** Variables ***
@@ -12,9 +13,7 @@ ${Url}    https://www.saucedemo.com/
 ${Engine}    Chrome
 ${Usuario}    standard_user
 ${Contraseña}    secret_sauce
-${VarNombre}    Michael
-${VarApellido}    Jodan
-${VarCodePostal}    111116
+
 
 
 *** Test Cases ***
@@ -47,3 +46,8 @@ Llenar Formulario Envio
     [Documentation]    Llenar los datos del formuarlio de envio
     [Tags]    Escenario Camino Feliz
     Register User    ${NombreU}    ${ApellidoU}    ${PostalU}
+
+Confirmar Pago
+    [Documentation]    Finalizar el pago dando clic en Finish
+    [Tags]    Escenario Camino Feliz
+    Confirmar Pago
