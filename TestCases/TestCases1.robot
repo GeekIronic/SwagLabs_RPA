@@ -50,4 +50,4 @@ Llenar Formulario Envio
 Confirmar Pago
     [Documentation]    Finalizar el pago dando clic en Finish
     [Tags]    Escenario Camino Feliz
-    Confirmar Pago
+    Confirmar Pagos
