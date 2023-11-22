@@ -4,6 +4,8 @@ Library  SeleniumLibrary
 Resource    ../Resources/Login.robot
 Resource    ../Resources/Buys.robot
 Resource    ../Resources/ShoppingCart.robot
+Resource    ../Resources/Formulation.robot
+Resource    ../Resources/ConfirmPayment.robot
 
 
 *** Variables ***
@@ -11,6 +13,7 @@ ${Url}    https://www.saucedemo.com/
 ${Engine}    Chrome
 ${Usuario}    standard_user
 ${Contraseña}    secret_sauce
+
 
 
 *** Test Cases ***
@@ -37,15 +40,14 @@ Entrar al Carrito
     [Tags]    Escenario camino feliz
     Verificar Carrito de compra
     Comprar productos
+    Sleep    5s
 
-*** Comments ***
 Llenar Formulario Envio
     [Documentation]    Llenar los datos del formuarlio de envio
     [Tags]    Escenario Camino Feliz
-    Input Text    ${For_nombre}    ${VarNombre}
-    Sleep    2s
-    Input Text    ${For_Apellido}    ${VarApellido}
-    Sleep    2s
-    Input Text    ${For_CodePostal}    ${VarCodePostal}
-    Sleep    2s
-    Click Button    ${btn_EnviarForm}
+    Register User    ${NombreU}    ${ApellidoU}    ${PostalU}
+
+Confirmar Pago
+    [Documentation]    Finalizar el pago dando clic en Finish
+    [Tags]    Escenario Camino Feliz
+    Confirmar Pago
